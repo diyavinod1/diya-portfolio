@@ -1,0 +1,240 @@
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin:20px 100px;
+}
+.aboutme {
+    margin:20px 100px;
+}
+.skills {
+    margin:20px 100px;
+}
+ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin:20px 100px;
+}
+.certi {
+    margin:20px 100px;
+}
+/*ul li {
+  margin-bottom: 10px; 
+}*/
+header {
+    width: 100%;
+}
+/*ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkcyan;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline;
+}
+li {
+  float: left;
+  border-right: 1px solid lightcyan;
+}
+
+
+li:last-child {
+  border-right: 1px solid lightcyan;
+}
+
+.active {
+  background-color: lightseagreen;
+}
+
+li a:hover {
+  background-color: lightseagreen;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #008080;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    background-color: darkcyan;
+}
+
+.nav-menu li {
+    border-right: 1px solid lightcyan;
+}
+
+.nav-menu li:last-child {
+    border-right: none;
+}
+
+.active {
+  background-color: lightseagreen;
+}
+
+.nav-menu li a {
+    display: block;
+    color: white;
+    padding: 19px 16px;     /*gj*/
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-menu li a:hover {
+    background-color: #40E0D0;
+}
+@media (max-width: 768px) {
+  section, p, ul {
+    margin: 20px 20px;
+  }
+
+  .section-title {
+    margin: 60px 20px 20px;
+  }
+}
+
+body, p, ul {
+  font-family: 'Open Sans', sans-serif;
+}
+.section-title {
+  font-family: 'Caveat', cursive;
+  font-size: 35px;
+  background-color: #40E0D0;
+  color: white;
+  margin: 60px 100px 20px;
+  padding: 10px;
+}
+footer {
+    background-color: #004D4D;
+  color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffd6d6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffb3b3;
+    text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.back-to-top:hover {
+    background-color: lightseagreen;
+}
+
+.back-to-top:focus,
+.back-to-top:active {
+    outline: none;
+    transform: none;
+    padding: 10px 15px;
+}*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+
+    /* 🔒 Lock layout */
+    border: 2px solid transparent;
+    display: inline-block;
+    line-height: 1;
+    box-sizing: border-box;
+
+    /* 🛡️ Stop mobile tap behavior */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.back-to-top:hover,
+.back-to-top:focus,
+.back-to-top:active {
+    background-color: lightseagreen;
+    color: white;
+    outline: none;
+    transform: none;
+    padding: 10px 15px; /* Reaffirm */
+    border: 2px solid transparent;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
+}
+a {
+  color: #FF6F61;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  background-color: #FFF4C1;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+section {
+  max-width: 10000px;
+  margin: auto;
+  padding: 20px;
+}
