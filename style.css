@@ -17,48 +17,11 @@ ul {
 .certi {
     margin:20px 100px;
 }
-/*ul li {
-  margin-bottom: 10px; 
-}*/
+
 header {
     width: 100%;
 }
-/*ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: darkcyan;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: inline;
-}
-li {
-  float: left;
-  border-right: 1px solid lightcyan;
-}
 
-
-li:last-child {
-  border-right: 1px solid lightcyan;
-}
-
-.active {
-  background-color: lightseagreen;
-}
-
-li a:hover {
-  background-color: lightseagreen;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-*/
 .navbar {
     position: fixed;
     top: 0;
@@ -91,7 +54,7 @@ li a {
 .nav-menu li a {
     display: block;
     color: white;
-    padding: 19px 16px;     /*gj*/
+    padding: 19px 16px;     
     text-decoration: none;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -144,33 +107,6 @@ footer a:hover {
 html {
   scroll-behavior: smooth;
 }
-/*.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: darkcyan;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-    -webkit-tap-highlight-color: transparent; 
-}
-
-.back-to-top:hover {
-    background-color: lightseagreen;
-}
-
-.back-to-top:focus,
-.back-to-top:active {
-    outline: none;
-    transform: none;
-    padding: 10px 15px;
-}*/
 
 .back-to-top {
     position: fixed;
@@ -186,14 +122,10 @@ html {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
     z-index: 1000;
-
-    /* 🔒 Lock layout */
     border: 2px solid transparent;
     display: inline-block;
     line-height: 1;
     box-sizing: border-box;
-
-    /* 🛡️ Stop mobile tap behavior */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -204,7 +136,7 @@ html {
     color: white;
     outline: none;
     transform: none;
-    padding: 10px 15px; /* Reaffirm */
+    padding: 10px 15px; 
     border: 2px solid transparent;
 }
 
