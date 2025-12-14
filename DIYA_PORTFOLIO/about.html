@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Diya - Python, Frontend & AI/ML Developer</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+:root {
+    --peach: #FFDAB9;
+    --lavender: #E6E6FA;
+    --baby-pink: #FFB6C1;
+    --sky-blue: #87CEEB;
+    --beige: #F5F5DC;
+    --soft-white: #FEFEFE;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--lavender) 0%, #F8F8FF 100%);
+    min-height: 100vh;
+}
+
+.hero-text { font-family: 'Quicksand', sans-serif; }
+
+.glass-card, .bio-card, .timeline-item, .info-card {
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover, .bio-card:hover, .timeline-item:hover, .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.download-btn {
+    background: linear-gradient(135deg, var(--baby-pink), #FF69B4);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,182,193,0.4);
+}
+
+.floating-dots { position: absolute; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.dot { position: absolute; border-radius: 50%; background: rgba(255,182,193,0.3); animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(180deg); } }
+
+/* Scroll Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.show {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Dots -->
+<div class="floating-dots">
+    <div class="dot" style="width:8px;height:8px;top:10%;left:15%;animation-delay:0s;"></div>
+    <div class="dot" style="width:12px;height:12px;top:20%;right:20%;animation-delay:1s;"></div>
+    <div class="dot" style="width:6px;height:6px;top:60%;left:10%;animation-delay:2s;"></div>
+    <div class="dot" style="width:10px;height:10px;top:80%;right:15%;animation-delay:3s;"></div>
+    <div class="dot" style="width:14px;height:14px;top:40%;right:30%;animation-delay:4s;"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-card">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="hero-text text-2xl font-bold text-gray-700">Diya ✨</div>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-700 hover:text-pink-400 font-medium transition-colors duration-300">Home</a>
+            <a href="about.html" class="text-pink-400 font-medium">About</a>
+            <a href="skills.html" class="text-gray-700 hover:text-pink-400 font-medium transition-colors duration-300">Skills</a>
+            <a href="projects.html" class="text-gray-700 hover:text-pink-400 font-medium transition-colors duration-300">Projects</a>
+            <a href="achievements.html" class="text-gray-700 hover:text-pink-400 font-medium transition-colors duration-300">Achievements</a>
+            <a href="contact.html" class="text-gray-700 hover:text-pink-400 font-medium transition-colors duration-300">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-24 pb-16 max-w-6xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-16 animate-on-scroll show">
+        <h1 class="hero-text text-5xl md:text-6xl font-bold text-gray-800 mb-4">About Me 🌸</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Get to know the person behind the code</p>
+    </div>
+
+    <!-- Bio Section -->
+    <div class="bio-card rounded-3xl p-8 md:p-12 mb-16 animate-on-scroll show">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/3">
+                <img src="resources/diya.jpeg" alt="Diya Vinod" class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-white/50 shadow-lg">
+            </div>
+            <div class="md:w-2/3">
+                <h2 class="hero-text text-3xl font-bold text-gray-800 mb-6">Hello There! 👋</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">I'm <span class="font-semibold text-pink-500">Diya Vinod</span>, a 2nd-year <strong>B.E. CSE (AI & ML)</strong> student at <b>KIT - Kalaignarkarunanidhi Institute of Technology</b> passionate about building clean, efficient, and user-friendly digital solutions. Currently learning <strong>Full-Stack Development</strong> while strengthening my Python and AI/ML skills.</p>
+                <p class="text-gray-700 text-lg leading-relaxed">My goal is to create applications that solve real-world problems and provide excellent user experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="mb-16">
+        <h2 class="hero-text text-4xl font-bold text-gray-800 text-center mb-12 animate-on-scroll show">My Journey 📚</h2>
+        <div class="space-y-8">
+            <div class="timeline-item rounded-2xl p-6 md:p-8 animate-on-scroll show">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="text-4xl">🎓</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">KIT - Kalaignarkarunanidhi Institute of Technology<br>B.E. – CSE (AI & ML)</h3>
+                        <p class="text-pink-500 font-medium mb-2">2024 - 2028 (2nd Year)</p>
+                        <p class="text-gray-600">Focused on web development, algorithms, AI, and software engineering principles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item rounded-2xl p-6 md:p-8 animate-on-scroll show">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="text-4xl">💻</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Web & Full-Stack Development</h3>
+                        <p class="text-pink-500 font-medium mb-2">2023 - Present</p>
+                        <p class="text-gray-600">Learning and building projects using HTML, CSS, JavaScript, Python, and Full-Stack frameworks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item rounded-2xl p-6 md:p-8 animate-on-scroll show">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="text-4xl">🚀</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project in Focus</h3>
+                        <p class="text-pink-500 font-medium mb-2">2025 - Present</p>
+                        <p class="text-gray-600">Developing a <strong>Smart Study Companion</strong> – an AI-powered web app to help students organize notes, manage tasks, and get personalized learning suggestions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="info-card rounded-2xl p-6 text-center animate-on-scroll show">
+            <div class="text-4xl mb-4">👩‍💻</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Roles Open To</h3>
+            <p class="text-gray-600">Frontend Developer</p>
+            <p class="text-gray-600">Python Developer</p>
+            <p class="text-gray-600">AI/ML Intern</p>
+        </div>
+        <div class="info-card rounded-2xl p-6 text-center animate-on-scroll show">
+            <div class="text-4xl mb-4">📍</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Location</h3>
+            <p class="text-gray-600">India</p>
+            <p class="text-pink-500 text-sm mt-2">Open to Remote Opportunities</p>
+        </div>
+        <div class="info-card rounded-2xl p-6 text-center animate-on-scroll show">
+            <div class="text-4xl mb-4">📧</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+            <p class="text-gray-600">dhiyavinodarrived@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- Download Resume -->
+    <div class="text-center animate-on-scroll show">
+        <a href="resources/DIYA_VINOD.pdf" download class="download-btn inline-block text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift">
+            Download Resume 📄
+        </a>
+        <p class="text-gray-600 mt-4 text-sm">Available in PDF format</p>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white/30 py-8">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <p class="text-gray-600 hero-text">Crafted with care & code</p>
+    </div>
+</footer>
+
+</body>
+</html>

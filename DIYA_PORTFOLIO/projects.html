@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Diya Vinod</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --peach: #FFDAB9;
+            --lavender: #E6E6FA;
+            --baby-pink: #FFB6C1;
+            --sky-blue: #87CEEB;
+            --beige: #F5F5DC;
+            --soft-white: #FEFEFE;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--baby-pink) 0%, var(--peach) 100%);
+            min-height: 100vh;
+        }
+        
+        .hero-text {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.6);
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 218, 185, 0.4));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, rgba(255, 218, 185, 0.6), rgba(255, 255, 255, 0.8));
+        }
+        
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: rgba(255, 182, 193, 0.8);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .tech-badge {
+            background: linear-gradient(135deg, rgba(255, 182, 193, 0.8), rgba(255, 218, 185, 0.6));
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-badge:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(255, 218, 185, 0.8), rgba(255, 182, 193, 0.6));
+        }
+        
+        .view-btn {
+            background: linear-gradient(135deg, var(--baby-pink), #FF69B4);
+            transition: all 0.3s ease;
+        }
+        
+        .view-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+        }
+        
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .heart {
+            position: absolute;
+            opacity: 0.2;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-25px) rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts">
+        <div class="heart text-4xl" style="top: 15%; left: 10%; animation-delay: 0s;">💕</div>
+        <div class="heart text-3xl" style="top: 25%; right: 15%; animation-delay: 2s;">💖</div>
+        <div class="heart text-5xl" style="top: 65%; left: 8%; animation-delay: 4s;">💗</div>
+        <div class="heart text-2xl" style="top: 85%; right: 20%; animation-delay: 6s;">💓</div>
+        <div class="heart text-4xl" style="top: 45%; right: 25%; animation-delay: 8s;">💝</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="hero-text text-2xl font-bold text-gray-700">
+                    Diya ✨
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">About</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Skills</a>
+                    <a href="projects.html" class="text-pink-400 font-medium">Projects</a>
+                    <a href="achievements.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Achievements</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <h1 class="hero-text text-5xl md:text-6xl font-bold text-gray-800 mb-4">
+                    My Projects 💼
+                </h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    A collection of web applications I've built with passion and code
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-16 animate-on-scroll">
+                <button class="filter-btn active rounded-full px-6 py-3 font-medium text-gray-700" data-filter="all">
+                    All Projects
+                </button>
+                <button class="filter-btn rounded-full px-6 py-3 font-medium text-gray-700" data-filter="web">
+                    Web Apps
+                </button>
+                <button class="filter-btn rounded-full px-6 py-3 font-medium text-gray-700" data-filter="ai">
+                    AI/ML
+                </button>
+                <button class="filter-btn rounded-full px-6 py-3 font-medium text-gray-700" data-filter="tool">
+                    Tools
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Smart ATS -->
+                <div class="project-card rounded-3xl p-6 hover-lift animate-on-scroll" data-category="ai">
+                    <div class="text-4xl mb-4 text-center">🤖</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Smart ATS</h3>
+                    <p class="text-gray-600 text-sm mb-4">AI Resume Checker</p>
+                    <p class="text-gray-700 text-sm mb-6 leading-relaxed">
+                        An intelligent Applicant Tracking System that uses AI to analyze resumes and match them with job descriptions.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Python</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Django</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">AI/ML</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">NLP</span>
+                    </div>
+                    <button class="view-btn w-full text-white py-2 rounded-full font-medium text-sm hover-lift">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- Study Companion -->
+                <div class="project-card rounded-3xl p-6 hover-lift animate-on-scroll" data-category="web">
+                    <div class="text-4xl mb-4 text-center">📚</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Study Companion</h3>
+                    <p class="text-gray-600 text-sm mb-4">Web App</p>
+                    <p class="text-gray-700 text-sm mb-6 leading-relaxed">
+                        A comprehensive study management platform with notes, flashcards, and progress tracking features.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Python</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Django</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">JavaScript</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">MySQL</span>
+                    </div>
+                    <button class="view-btn w-full text-white py-2 rounded-full font-medium text-sm hover-lift">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- URL Shortener -->
+                <div class="project-card rounded-3xl p-6 hover-lift animate-on-scroll" data-category="tool">
+                    <div class="text-4xl mb-4 text-center">🔗</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">URL Shortener</h3>
+                    <p class="text-gray-600 text-sm mb-4">Django App</p>
+                    <p class="text-gray-700 text-sm mb-6 leading-relaxed">
+                        A clean and efficient URL shortening service with analytics and custom alias support.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Python</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Django</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">SQLite</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Bootstrap</span>
+                    </div>
+                    <button class="view-btn w-full text-white py-2 rounded-full font-medium text-sm hover-lift">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- To-Do List -->
+                <div class="project-card rounded-3xl p-6 hover-lift animate-on-scroll" data-category="tool">
+                    <div class="text-4xl mb-4 text-center">✅</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ultimate To-Do List</h3>
+                    <p class="text-gray-600 text-sm mb-4">Productivity Tool</p>
+                    <p class="text-gray-700 text-sm mb-6 leading-relaxed">
+                        A feature-rich task management application with categories, deadlines, and priority levels.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Python</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Django</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">JavaScript</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">CSS3</span>
+                    </div>
+                    <button class="view-btn w-full text-white py-2 rounded-full font-medium text-sm hover-lift">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- Notes App -->
+                <div class="project-card rounded-3xl p-6 hover-lift animate-on-scroll" data-category="web">
+                    <div class="text-4xl mb-4 text-center">📝</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Notes App</h3>
+                    <p class="text-gray-600 text-sm mb-4">Web Application</p>
+                    <p class="text-gray-700 text-sm mb-6 leading-relaxed">
+                        A simple yet powerful note-taking application with rich text editing and cloud sync capabilities.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Python</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Django</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">SQLite</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">AJAX</span>
+                    </div>
+                    <button class="view-btn w-full text-white py-2 rounded-full font-medium text-sm hover-lift">
+                        View Project
+                    </button>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="project-card rounded-3xl p-6 hover-lift animate-on-scroll" data-category="web">
+                    <div class="text-4xl mb-4 text-center">🌐</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Personal Portfolio</h3>
+                    <p class="text-gray-600 text-sm mb-4">Website</p>
+                    <p class="text-gray-700 text-sm mb-6 leading-relaxed">
+                        A beautiful, responsive portfolio website showcasing my skills, projects, and journey as a developer.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">HTML5</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">CSS3</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">JavaScript</span>
+                        <span class="tech-badge rounded-full px-3 py-1 text-xs font-medium text-gray-700">Tailwind</span>
+                    </div>
+                    <button class="view-btn w-full text-white py-2 rounded-full font-medium text-sm hover-lift">
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16 animate-on-scroll">
+                <h2 class="hero-text text-3xl font-bold text-gray-800 mb-4">
+                    Like what you see? 🤝
+                </h2>
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                    I'm always excited to work on new projects and collaborate with amazing people. Let's build something beautiful together!
+                </p>
+                <a href="contact.html" class="view-btn text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/30 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-600 hero-text">
+                Designed with care • Built with passion
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

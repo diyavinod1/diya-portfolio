@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements & Coding Profiles | Diya Vinod</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #E6E6FA, #F8F8FF);
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* floating background */
+    .floating-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,182,193,0.25);
+      animation: float 12s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-40px) translateX(20px); }
+    }
+
+    .hero-text {
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.45);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .glass-card {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.35s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.6);
+}
+
+    .card {
+      transition: all 0.35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+    }
+
+    .cert-item {
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.6);
+      transition: all 0.3s ease;
+    }
+
+    .cert-item:hover {
+      transform: translateX(6px);
+      background: rgba(255,182,193,0.35);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Floating background -->
+  <div class="floating-bg">
+    <div class="bubble" style="width:120px;height:120px;top:10%;left:8%;animation-delay:0s"></div>
+    <div class="bubble" style="width:80px;height:80px;top:30%;right:12%;animation-delay:2s"></div>
+    <div class="bubble" style="width:100px;height:100px;bottom:20%;left:15%;animation-delay:4s"></div>
+    <div class="bubble" style="width:60px;height:60px;bottom:15%;right:20%;animation-delay:6s"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="glass-card fixed top-0 w-full z-50">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="hero-text text-2xl font-bold text-gray-700">Diya ✨</h1>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-pink-400">Home</a>
+        <a href="about.html" class="hover:text-pink-400">About</a>
+        <a href="skills.html" class="hover:text-pink-400">Skills</a>
+        <a href="projects.html" class="hover:text-pink-400">Projects</a>
+        <a href="achievements.html" class="text-pink-400">Achievements</a>
+        <a href="contact.html" class="hover:text-pink-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="flex-grow pt-28 pb-16">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- HEADER -->
+      <div class="text-center mb-16">
+        <h2 class="hero-text text-5xl font-bold text-gray-800 mb-4">Achievements & Coding Profiles 🚀</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto">A snapshot of my competitive coding journey, hackathon experiences, and continuous learning through certifications.</p>
+      </div>
+
+      <!-- CODING PLATFORMS -->
+      <section class="mb-20">
+        <h3 class="hero-text text-3xl font-bold text-gray-800 mb-10 text-center">Coding Platforms 💻</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <a href="https://codolio.com/profile/diya_vinod" target="_blank" class="glass card rounded-3xl p-8 text-center">
+            <img src="https://media.licdn.com/dms/image/v2/D560BAQEOgoIfP8g_xw/company-logo_200_200/company-logo_200_200/0/1719847023488?e=2147483647&v=beta&t=dWu9x83FT-6r6dfseLKaLBF4mHSQBZITThD8OM99ciI" class="w-16 h-16 mx-auto mb-4" />
+            <h4 class="text-xl font-semibold">Codolio</h4>
+            <p class="text-gray-600 mt-2">Unified coding profile showcasing consistency and growth</p>
+          </a>
+
+          <a href="https://www.codechef.com/users/kit28aiml018" target="_blank" class="glass card rounded-3xl p-8 text-center">
+            <img src="https://cdn.codechef.com/images/cc-logo.svg" class="w-20 mx-auto mb-4" />
+            <h4 class="text-xl font-semibold">CodeChef</h4>
+            <p class="text-gray-600 mt-2">Problem-solving through contests and practice</p>
+          </a>
+
+          <a href="https://leetcode.com/u/diya_vinod_/" target="_blank" class="glass card rounded-3xl p-8 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" class="w-16 mx-auto mb-4" />
+            <h4 class="text-xl font-semibold">LeetCode</h4>
+            <p class="text-gray-600 mt-2">Data structures, algorithms & interview prep</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- HACKATHONS -->
+      <section class="mb-20">
+        <h3 class="hero-text text-3xl font-bold text-gray-800 mb-10 text-center">Hackathons 🏆</h3>
+        <div class="space-y-6">
+          <div class="glass card rounded-2xl p-6">
+            <h4 class="text-xl font-semibold">DevSpark'25 – DevForge'25</h4>
+            <p class="text-pink-500 font-medium">KPR Institute of Engineering and Technology</p>
+            <p class="text-gray-600 mt-2">24-hour national-level hackathon focused on rapid ideation, development, and deployment.</p>
+          </div>
+          <div class="glass card rounded-2xl p-6">
+            <h4 class="text-xl font-semibold">CodeXtreme</h4>
+            <p class="text-pink-500 font-medium">KIT – Kalaignarkarunanidhi Institute of Technology</p>
+            <p class="text-gray-600 mt-2">24-hour coding hackathon emphasizing problem-solving and collaboration.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section>
+        <h3 class="hero-text text-3xl font-bold text-gray-800 mb-10 text-center">Certifications 📜</h3>
+        <div class="glass rounded-3xl p-10">
+          <p class="text-gray-700 mb-6">I strongly believe learning goes beyond classrooms. These certifications reflect my curiosity and commitment to continuous improvement:</p>
+          <ul class="space-y-4 text-gray-700">
+            <li class="cert-item">Get Started with Python – Google (Coursera)</li>
+            <li class="cert-item">HTML & CSS Crash Course – Scrimba × Coursera</li>
+            <li class="cert-item">Spreadsheets for Beginners – Google Sheets</li>
+            <li class="cert-item">Basic Image Classification with TensorFlow</li>
+            <li class="cert-item">Deep Learning & Reinforcement Learning – IBM</li>
+            <li class="cert-item">Problem Solving Through Programming in C – NPTEL</li>
+            <li class="cert-item">Basics of Data Structures and Algorithms – Simplilearn</li>
+            <li class="cert-item">Salesforce Trailhead – Agentblazer Champion</li>
+            <li class="cert-item">Cisco Networking Academy – Introduction to Cybersecurity</li>
+            <li class="cert-item">Cisco Networking Academy – Python Essentials 1 & 2</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="glass py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-gray-700 text-sm">
+      Built with consistency, curiosity & code
+    </div>
+  </footer>
+
+</body>
+</html>

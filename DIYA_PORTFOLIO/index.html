@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Vinod - Budding AI/ML Engineer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        :root {
+            --peach: #FFDAB9;
+            --lavender: #E6E6FA;
+            --baby-pink: #FFB6C1;
+            --sky-blue: #87CEEB;
+            --beige: #F5F5DC;
+            --soft-white: #FEFEFE;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--peach) 0%, var(--lavender) 100%);
+            min-height: 100vh;
+        }
+        
+        .hero-text {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .sparkle-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--baby-pink), #FF69B4);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #FF69B4, var(--baby-pink));
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--lavender);
+            color: #6B46C1;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            background: var(--lavender);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 glass-card">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="hero-text text-2xl font-bold text-gray-700">
+                    Diya ✨
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">About</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Skills</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Projects</a>
+                    <a href="achievements.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Achievements</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-pink-400 transition-colors duration-300 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center relative pt-20">
+        <div class="sparkle-container"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <div class="mb-8 floating">
+                <img src="resources/diya.jpeg" alt="Diya Vinod" class="profile-image mx-auto">
+            </div>
+            
+            <div class="animate-on-scroll">
+                <h1 class="hero-text text-5xl md:text-7xl font-bold text-gray-800 mb-6">
+                    Hi, I'm Diya ✨
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    I create clean, efficient, and impactful digital solutions, combining Python, Full-Stack Development, and AI/ML with a focus on user-friendly design.
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll">
+                <a href="projects.html" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg btn-hover">
+                    See my work
+                </a>
+                <a href="about.html" class="btn-outline px-8 py-4 rounded-full font-semibold text-lg btn-hover">
+                    About me
+                </a>
+            </div>
+            
+            <div class="absolute top-20 left-10 text-4xl opacity-30 float-animation">🌸</div>
+            <div class="absolute top-40 right-20 text-3xl opacity-30 float-animation">💫</div>
+            <div class="absolute bottom-20 left-20 text-2xl opacity-30 float-animation">🦋</div>
+            <div class="absolute bottom-40 right-10 text-3xl opacity-30 float-animation">✨</div>
+        </div>
+    </section>
+
+    <div class="wavy-divider"></div>
+
+    <section class="py-20 bg-white/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="hero-text text-4xl font-bold text-gray-800 mb-4">
+                    Building with Passion 💕
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    I’m a Computer Science Engineering student experienced in Python, Full-Stack Development, and AI/ML.
+<br>
+I focus on writing clean code, solving problems efficiently, and building applications that users enjoy.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-3xl p-8 text-center hover-lift animate-on-scroll">
+                    <div class="text-4xl mb-4">🐍</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Python Development</h3>
+                    <p class="text-gray-600">Clean, efficient backend solutions</p>
+                </div>
+                
+                <div class="glass-card rounded-3xl p-8 text-center hover-lift animate-on-scroll">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Frontend Design</h3>
+                    <p class="text-gray-600">Aesthetic and responsive interfaces</p>
+                </div>
+
+                <div class="glass-card rounded-3xl p-8 text-center hover-lift animate-on-scroll">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">AI/ML</h3>
+                    <p class="text-gray-600">Developing data-driven and intelligent solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white/30 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-600 hero-text">
+                Crafted by Diya Vinod © 2025
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
