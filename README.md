@@ -5,7 +5,7 @@
 Welcome to my **personal portfolio website**, where I showcase my skills, projects, achievements, and the path I’m carving as a developer 🚀  
 This portfolio is designed to feel **alive** — with smooth animations, glassmorphism UI, and a soft pastel aesthetic that reflects both creativity and clarity.
 
-🔗 **Live Portfolio:** *(link coming soon — stay tuned 👀)*
+🔗 **Live Portfolio:** *https://www.diyavinod.com/*
 
 ---
 
