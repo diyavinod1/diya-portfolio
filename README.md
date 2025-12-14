@@ -1,49 +1,142 @@
-🌐 Diya Vinod — Portfolio Website
-Welcome to the GitHub repo for my first frontend project — my personal portfolio website!
-🔗 Live Site: diyavinod1.github.io/diya-portfolio
+# 🌸 Diya Vinod — Developer Portfolio ✨
 
-📌 About This Project
-This website is my digital space — where I share my journey as a Computer Science student, my skills, certifications, hobbies, and creative experiments.
-It’s more than just code — it’s my story, built one line at a time. 💻✨
+> *“Not just a portfolio — a journey of curiosity, consistency, and code.”*
 
-🧠 Why I Built This
+Welcome to my **personal portfolio website**, where I showcase my skills, projects, achievements, and the path I’m carving as a developer 🚀  
+This portfolio is designed to feel **alive** — with smooth animations, glassmorphism UI, and a soft pastel aesthetic that reflects both creativity and clarity.
 
-✅ To apply what I learned in the HTML & CSS Crash Course on Coursera (Scrimba)
-✅ To learn by doing — this is my first complete frontend project
-✅ To create something that reflects my personality and passion for tech + creativity
+🔗 **Live Portfolio:** *(link coming soon — stay tuned 👀)*
 
-🚀 Features
+---
 
-🌸 Smooth scroll navigation
-📜 Sections on About Me, Skills, Certifications, Languages, Hobbies & more
-🖼️ Canva-designed banner for a fun first impression
-💌 Contact info with GitHub and LinkedIn links
-💡 Clean, minimalist design with soft pastel background
+## 👩‍💻 About Me
 
-👩‍💻 Tech Stack
+Hi! I’m **Diya Vinod**, a passionate developer who believes that learning doesn’t stop at classrooms or syllabi.
 
-- HTML5
-- CSS3
-- Google Fonts
-- Hosted on GitHub Pages
+- 🎓 Student at **KIT – Kalaignarkarunanidhi Institute of Technology**
+- 💡 Curious about **web development, problem solving, and AI**
+- 🌱 Currently learning **React, Node.js & DevOps basics**
+- 🧠 Strong believer in *learning by building*
 
-💭 What I’m Looking For
+This portfolio is a reflection of:
+> **what I know, what I’ve built, and what I’m becoming.**
 
-I'm inviting project ideas that:
-  ✅ Help me learn more about frontend development
-  ✅ Involve beginner-friendly JavaScript or backend integration
-  ✅ Solve small real-world problems or add creative flair
+---
 
-🎯 Even if it's just a fun mini tool, I’m interested!
-Feel free to open an issue or drop me a message.
+## 🛠️ Tech Stack
 
-📫 Contact
+### ✨ Frontend
+- HTML5  
+- CSS3  
+- JavaScript (Basics)  
+- Responsive Design  
+- Tailwind CSS  
 
-📧 Email: dhiyavinodarrived@gmail.com
-🐱 GitHub: @diyavinod1
-💼 LinkedIn: linkedin.com/in/diyavinod1
+### ⚙️ Backend
+- Python  
+- Django (Basics)  
 
-🌈 Final Note
+### 🗄️ Database
+- MySQL  
 
-If you're a fellow beginner or student building your first site — I’d love to connect!
-Let’s learn, build, and grow together. 🚀
+### 🧰 Tools
+- Git & GitHub  
+- VS Code  
+
+---
+
+## 💼 Projects
+
+This portfolio includes a curated set of **mini projects and applications**, such as:
+
+- 🤖 **Smart ATS** — AI-powered resume checker  
+- 📚 **Study Companion** — study & productivity web app  
+- 🔗 **URL Shortener** — clean Django-based tool  
+- ✅ **Ultimate To-Do App**  
+- 📝 **Notes Application**  
+- 🌐 **Personal Portfolio Website**
+
+Each project focuses on:
+- Clean UI
+- Practical problem-solving
+- Real-world use cases
+
+---
+
+## 🏆 Achievements & Coding Profiles
+
+### 💻 Coding Platforms
+- **Codolio** – unified coding profile  
+- **CodeChef** – competitive programming  
+- **LeetCode** – DSA & interview prep  
+
+### 🚀 Hackathons
+- **DevSpark’25 – DevForge’25**  
+  *KPR Institute of Engineering and Technology*  
+  → 24-hour national-level hackathon  
+
+- **CodeXtreme**  
+  *KIT – Kalaignarkarunanidhi Institute of Technology*  
+  → 24-hour coding hackathon  
+
+### 📜 Certifications
+A few highlights from my learning journey:
+- 🧠 *Get Started with Python* — Google (Coursera)  
+- 🌐 *HTML & CSS Crash Course* — Scrimba × Coursera  
+- 📊 *Spreadsheets for Beginners* — Google Sheets  
+- 🤖 *Basic Image Classification with TensorFlow*  
+- 🧬 *Deep Learning & Reinforcement Learning* — IBM  
+- 💻 *Problem Solving Through Programming in C* — NPTEL  
+- 📚 *Data Structures & Algorithms* — Simplilearn  
+- ☁️ Salesforce Trailhead — **Agentblazer Champion**  
+- 🔐 Cisco — Introduction to Cybersecurity  
+- 🐍 Cisco — Python Essentials 1 & 2  
+
+---
+
+## 📬 Contact Me
+
+Let’s connect, collaborate, or just geek out about tech 🤝
+
+- 💼 **LinkedIn:** https://www.linkedin.com/in/diyavinod1/  
+- 🧑‍💻 **GitHub:** https://github.com/diyavinod1  
+- 📧 **Email:** dhiyavinodarrived@gmail.com  
+
+The portfolio also includes a **fully functional contact form** powered by **Formspree** — messages go straight to my inbox 📩
+
+---
+
+## 🎨 Design Philosophy
+
+- Soft pastel color palette 🌸  
+- Glassmorphism UI ✨  
+- Smooth hover effects & transitions  
+- Subtle background animations  
+- Clean, readable, recruiter-friendly layout  
+
+Every section is crafted to feel **pleasant, professional, and memorable**.
+
+---
+
+## 🚀 What’s Next?
+
+- Add more real-world projects  
+- Improve JavaScript depth  
+- Build full-stack applications  
+- Dive deeper into React & backend systems  
+
+> *This portfolio will grow as I grow.*
+
+---
+
+## 💖 Final Note
+
+If you’re a recruiter, mentor, or fellow developer:
+- ⭐ Star the repo if you liked it
+- 💬 Reach out — I’d love to connect
+- 👀 Watch this space… more is coming
+
+---
+
+**Built with 💖, patience, and lots of debugging  
+— Diya Vinod**
