@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya | Hackathon Details</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+<style>
+    .detail-page {
+        min-height: 100vh;
+        padding: 140px 7% 80px;
+        position: relative;
+    }
+    .detail-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .detail-back {
+        display: inline-flex;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+    .detail-card {
+        padding: 35px;
+        border-radius: 24px;
+    }
+    .detail-meta {
+        margin: 10px 0 25px;
+        opacity: .8;
+    }
+    .detail-description {
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+    .pdf-viewer {
+        width: 100%;
+        height: 780px;
+        border: 0;
+        border-radius: 16px;
+        background: #111;
+        margin-top: 25px;
+    }
+    .detail-list {
+        line-height: 1.9;
+        margin: 20px 0;
+    }
+    .pdf-notice {
+        margin-top: 25px;
+        padding: 1rem 1.1rem;
+        border: 1px dashed rgba(0,212,255,.22);
+        border-radius: 14px;
+        color: var(--text-muted);
+        background: rgba(0,212,255,.025);
+        line-height: 1.7;
+        font-size: .8rem;
+    }
+    .detail-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-logo"><span class="logo-text">&lt;Diya/&gt;</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="index.html#games" class="nav-link">Games</a></li>
+            <li><a href="index.html#achievements" class="nav-link active">Achievements</a></li>
+        </ul>
+    </nav>
+
+    <main class="detail-page">
+        <div class="detail-wrapper">
+            <a href="index.html#achievements" class="btn btn-secondary detail-back">← Back to Portfolio</a>
+            <div class="detail-card glass-card">
+                <span class="section-tag">Hackathon</span>
+                <h1 id="title" class="section-title"></h1>
+                <p id="meta" class="detail-meta"></p>
+                <p id="description" class="detail-description"></p>
+                <h3>Project / Team Details</h3>
+                <ul id="highlights" class="detail-list"></ul>
+
+                <div class="detail-actions">
+                    <a id="liveLink" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="display:none">View Project</a>
+                    <a id="secondLiveLink" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="display:none">View Round 2 · TalentSync AI</a>
+                    <a id="pdfLink" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Open PDF</a>
+                </div>
+
+                <div id="pdfNotice" class="pdf-notice" hidden></div>
+                <iframe id="pdfViewer" class="pdf-viewer" title="Hackathon PDF"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        const hackathons = {
+            "sprintathon-2026": {
+                title: "Sprintathon 2026 — HireWise AI",
+                meta: "Team Leader · Finalist",
+                description: "Fairer Hiring. Smarter Careers. An explainable, bias-aware AI hiring and career intelligence platform.",
+                highlights: [
+                    "Resume-to-Role Fit Scorer with explainability",
+                    "Independent fairness auditing using demographic parity",
+                    "Candidate career intelligence, skill gaps, interview preparation, and roadmaps",
+                    "Recruiter job management, AI ranking, explainable scoring, and candidate status workflows",
+                    "Team: Diya Vinod, Janani, Rakshitha, Sanjusri"
+                ],
+                pdf: "assets/pdfs/hackathons/sprintathon-2026.pdf"
+            },
+            "buildathon-2026": {
+                title: "Buildathon 2026",
+                meta: "Team Leader · Diya Vinod + Rakshitha V. · 2 Rounds",
+                description: "One buildathon journey across two rounds: EduPortal in Round 1 and TalentSync AI in Round 2.",
+                highlights: [
+                    "Round 1 — EduPortal: AI-powered education management platform for students, teachers, and admins",
+                    "Round 1 stack: React + TypeScript + Vite, Node + Express + TypeScript, MongoDB Atlas, JWT, OpenRouter, Render",
+                    "Round 2 — TalentSync AI: internal talent discovery connecting people, skills, experience, requirements, and opportunities",
+                    "Round 2 stack: React / JavaScript / CSS, Python + FastAPI REST, LLM/NLP semantic matching and prompt reasoning",
+                    "Team: Diya Vinod + Rakshitha V. · Team leader across both rounds"
+                ],
+                live: "https://eduportal-xti9.onrender.com/",
+                secondLive: "https://talentsync-ai-ajyl.onrender.com/",
+                pdf: "assets/pdfs/hackathons/buildathon.pdf"
+            },
+            "tnwise-2026": {
+                title: "TNWISE 2026",
+                meta: "Team Leader · Diya Vinod",
+                description: "Hackathon participation as team leader with junior teammates.",
+                highlights: [
+                    "Team Leader: Diya Vinod",
+                    "Members: Vinitha, Alshifha"
+                ],
+                pdf: "assets/pdfs/hackathons/tnwise-2026.pdf"
+            },
+            "devspark-25": {
+                title: "DevSpark'25",
+                meta: "KPR Institute of Engineering and Technology · Team Leader",
+                description: "Hackathon project focused on a Smart Hospital Queue Management System.",
+                highlights: [
+                    "Organizer: KPR Institute of Engineering and Technology",
+                    "Project: Smart Hospital Queue Management System",
+                    "Role: Team Leader · Members: Aishwarya, Haripriya, Dharanipriya"
+                ],
+                pdf: "assets/pdfs/hackathons/devspark-25.pdf"
+            },
+            "east-india-blockchain": {
+                title: "East India BLOCKCHAIN Summit 2.0",
+                meta: "IIT Kharagpur · Team Leader · Finalist",
+                description: "Hackathon project focused on an Emergency & Disaster Relief Stablecoin System.",
+                highlights: [
+                    "Organizer: IIT Kharagpur",
+                    "Project: Emergency & Disaster Relief Stablecoin System",
+                    "Result: Finalist",
+                    "Role: Team Leader · Members: Haripriya, Dharanipriya, Maheswari"
+                ],
+                pdf: "assets/pdfs/hackathons/east-india-blockchain.pdf"
+            },
+            "tnimpact": {
+                title: "TNIMPACT 2026",
+                meta: "TANCAM · Solo Builder",
+                description: "Built a multilingual voice-first health assistant.",
+                highlights: [
+                    "Organizer: TANCAM",
+                    "Project: Multilingual Voice-first Health Assistant",
+                    "Role: Solo Builder"
+                ],
+                pdf: "assets/pdfs/hackathons/tnimpact.pdf"
+            }
+        };
+
+        async function verifyPdf(path) {
+            const viewer = document.getElementById("pdfViewer");
+            const link = document.getElementById("pdfLink");
+            const secondLive = document.getElementById("secondLiveLink");
+            const notice = document.getElementById("pdfNotice");
+            try {
+                const response = await fetch(path, { method: "HEAD", cache: "no-store" });
+                if (!response.ok) throw new Error("missing");
+            } catch (error) {
+                viewer.style.display = "none";
+                link.style.display = "none";
+                notice.hidden = false;
+                notice.textContent = "The PDF attachment is not included in the current portfolio package. Add the certificate/letter PDF at the path referenced by this page and it will appear here automatically.";
+            }
+        }
+
+        const key = new URLSearchParams(location.search).get("hackathon");
+        const item = hackathons[key];
+
+        if (item) {
+            document.title = "Diya | " + item.title;
+            document.getElementById("title").textContent = item.title;
+            document.getElementById("meta").textContent = item.meta;
+            document.getElementById("description").textContent = item.description;
+            document.getElementById("highlights").innerHTML = item.highlights.map(x => "<li>" + x + "</li>").join("");
+            document.getElementById("pdfLink").href = item.pdf;
+            document.getElementById("pdfViewer").src = item.pdf;
+            verifyPdf(item.pdf);
+
+            if (item.live) {
+                const live = document.getElementById("liveLink");
+                live.href = item.live;
+                live.style.display = "inline-flex";
+            }
+        } else {
+            document.getElementById("title").textContent = "Hackathon Details";
+            document.getElementById("description").textContent = "Select a hackathon from the portfolio to view its details.";
+            document.getElementById("pdfViewer").style.display = "none";
+        }
+    </script>
+</body>
+</html>

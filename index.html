@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-2165101018741297">
+    <meta name="google-site-verification" content="pCnOxuYKfIaP6gaNw-gQWl-IRWOz6gRAaS8CUSSQX7o" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya | AI Builder & Full-Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fast, lightweight loading experience -->
+    <div class="site-loader" id="siteLoader" aria-hidden="true">
+        <div class="loader-mark">&lt;D/&gt;</div>
+        <div class="loader-line"><span></span></div>
+        <div class="loader-status">INITIALIZING PORTFOLIO<span class="loader-dots">...</span></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">&lt;Diya/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#games" class="nav-link">Games</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="nav-tool-btn command-trigger" type="button" title="Command palette">⌘K</button>
+            <button class="nav-tool-btn recruiter-trigger" type="button" title="Recruiter View">Recruiter View</button>
+            <button class="nav-tool-btn copy-trigger" type="button" title="Copy profile link">↗ Copy Link</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <span class="greeting-text">Hello, World!</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="name-highlight">Diya Vinod</span> <span class="sparkle">✨</span>
+                </h1>
+                <p class="hero-description">
+                    I build <span class="typewriter"></span><span class="cursor">|</span>
+                </p>
+                <p class="hero-subtitle">
+                    AI / ML Engineer-in-Progress · Full-Stack Builder · Problem Solver
+                </p>
+                <p class="personality-line">
+                    <span class="rocket">🚀</span> I like taking ambitious ideas seriously enough to ship them.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary magnetic-btn">
+                        <span>See My Work</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-secondary magnetic-btn">
+                        <span>About Me</span>
+                    </a>
+                    <!-- RESUME BUTTON -->
+                    <button type="button" class="btn btn-secondary magnetic-btn resume-preview-trigger">
+                        <span>Preview Resume</span>
+                        <span aria-hidden="true">⌁</span>
+                    </button>
+                    <a href="assets/DIYA VINOD.pdf" download class="btn btn-resume magnetic-btn">
+                        <span>Download Resume</span>
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 3v12"/>
+                            <path d="M7 10l5 5 5-5"/>
+                            <path d="M5 21h14"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="assets/image.png" alt="Diya - AI Developer" class="hero-image">
+                    <div class="floating-badges">
+                        <div class="badge badge-1">
+                            <span class="badge-icon">🤖</span>
+                            <span>AI/ML</span>
+                        </div>
+                        <div class="badge badge-2">
+                            <span class="badge-icon">⚡</span>
+                            <span>Full-Stack</span>
+                        </div>
+                        <div class="badge badge-3">
+                            <span class="badge-icon">🎯</span>
+                            <span>Problem Solver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+
+        <div class="hero-stats-strip" aria-label="Portfolio highlights">
+            <div class="hero-stat">
+                <span class="hero-stat-index">01</span>
+                <div><strong>1760+</strong><span>Problems Solved</span></div>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-index">02</span>
+                <div><strong>9+</strong><span>Projects</span></div>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-index">03</span>
+                <div><strong>5+</strong><span>Hackathon Builds</span></div>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-index">04</span>
+                <div><strong>3</strong><span>Internships</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">01. About Me</span>
+            <h2 class="section-title">The Story Behind <span class="gradient-text">The Builder</span></h2>
+            <p class="section-subtitle">I build to understand. I ship to prove it works.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <div class="about-card glass-card">
+
+                    <p class="about-intro">
+                        I'm Diya — a <span class="highlight">3rd year CSE (AI & ML) student</span> at
+                        <span class="highlight">KIT - Kalaignarkarunanidhi Institute of Technology</span> who enjoys turning
+                        “what if?” ideas into products people can actually interact with.
+                    </p>
+
+                    <p class="about-body">
+                        I work at the intersection of <span class="highlight">AI, software engineering, and problem-solving</span> —
+                        building GenAI products, full-stack systems, developer tools, and the occasional browser game.
+                        My favorite workflow is simple: <span class="highlight">build it → break it → understand it → make it better.</span>
+                    </p>
+
+                    <div class="power-statement">
+                        <span class="quote-icon">"</span>
+                        <p>
+                            I don't want a toolbox full of technologies.
+                            <span class="gradient-text">I want enough understanding to build with them.</span>
+                        </p>
+                        <span class="quote-icon">"</span>
+                    </div>
+
+                </div>
+
+                <div class="learning-pills">
+                    <span class="pill">🤖 Generative AI</span>
+                    <span class="pill">💻 Full-Stack Development</span>
+                    <span class="pill">🧠 Problem Solving</span>
+                    <span class="pill">📊 Competitive Programming</span>
+                    <span class="pill">🔌 Exploring IoT</span>
+                </div>
+            </div>
+
+            <div class="journey-timeline">
+                <h3 class="timeline-title">My Journey</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023</span>
+                            <h4>Started Coding</h4>
+                            <p>Turned curiosity into my first steps in programming.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h4>Started CSE (AI & ML)</h4>
+                            <p>Began my journey into computer science, AI and machine learning.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2025">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025</span>
+                            <h4>Started Building Seriously</h4>
+                            <p>Built AI systems, full-stack applications and joined hackathons.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item active" data-year="2026">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2026</span>
+                            <h4>Building & Exploring</h4>
+                            <p>Going deeper into GenAI, agentic systems, production-ready full-stack systems and the ideas that sit between software and the real world.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <span class="section-tag">02. Skills</span>
+            <h2 class="section-title">Tech <span class="gradient-text">Arsenal</span></h2>
+        </div>
+
+        <div class="skills-content">
+
+            <!-- Programming -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">💻</span>
+                    Programming
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="90">Python</span>
+                    <span class="skill-tag" data-level="80">C++</span>
+                    <span class="skill-tag" data-level="78">Java</span>
+                    <span class="skill-tag" data-level="85">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🎨</span>
+                    Frontend
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="92">React</span>
+                    <span class="skill-tag" data-level="85">Vite</span>
+                    <span class="skill-tag" data-level="88">TailwindCSS</span>
+                    <span class="skill-tag" data-level="90">HTML5</span>
+                    <span class="skill-tag" data-level="88">CSS3</span>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">⚙️</span>
+                    Backend
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="90">Node.js</span>
+                    <span class="skill-tag" data-level="85">Express.js</span>
+                    <span class="skill-tag" data-level="82">FastAPI</span>
+                    <span class="skill-tag" data-level="80">Flask</span>
+                    <span class="skill-tag" data-level="82">REST APIs</span>
+                </div>
+            </div>
+
+            <!-- AI / ML -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🤖</span>
+                    AI / ML
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="85">NLP</span>
+                    <span class="skill-tag" data-level="85">LLM APIs</span>
+                    <span class="skill-tag" data-level="80">RAG</span>
+                    <span class="skill-tag" data-level="82">AI Agents</span>
+                    <span class="skill-tag" data-level="82">LangChain</span>
+                    <span class="skill-tag" data-level="78">Scikit-learn</span>
+                    <span class="skill-tag" data-level="75">XGBoost</span>
+                    <span class="skill-tag" data-level="88">Prompt Engineering</span>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🗄️</span>
+                    Databases
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="85">MongoDB</span>
+                    <span class="skill-tag" data-level="82">MySQL</span>
+                    <span class="skill-tag" data-level="80">Supabase</span>
+                </div>
+            </div>
+
+            <!-- APIs & Automation -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🔗</span>
+                    APIs & Automation
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="85">REST APIs</span>
+                    <span class="skill-tag" data-level="78">Web Speech API</span>
+                    <span class="skill-tag" data-level="80">Chrome Extensions API</span>
+                    <span class="skill-tag" data-level="82">n8n</span>
+                    <span class="skill-tag" data-level="75">Make</span>
+                </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🛠️</span>
+                    Tools & Platforms
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="90">Git</span>
+                    <span class="skill-tag" data-level="92">GitHub</span>
+                    <span class="skill-tag" data-level="85">Postman</span>
+                    <span class="skill-tag" data-level="85">VS Code</span>
+                    <span class="skill-tag" data-level="85">Vercel</span>
+                    <span class="skill-tag" data-level="82">Render</span>
+                    <span class="skill-tag" data-level="80">Streamlit</span>
+                </div>
+            </div>
+
+            <!-- Core CS -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🧠</span>
+                    CS Core
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-level="90">DSA</span>
+                    <span class="skill-tag" data-level="82">OOP</span>
+                    <span class="skill-tag" data-level="75">Operating Systems</span>
+                    <span class="skill-tag" data-level="78">Computer Networks</span>
+                    <span class="skill-tag" data-level="78">Software Design</span>
+                </div>
+            </div>
+
+            <!-- Exploring -->
+            <div class="skill-category exploring">
+                <h3 class="category-title">
+                    <span class="category-icon">🔮</span>
+                    What I’m Building Around
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag explore">🔌 IoT</span>
+                    <span class="skill-tag explore">🤖 Agentic AI</span>
+                    <span class="skill-tag explore">⚡ Advanced RAG</span>
+                    <span class="skill-tag explore">🐳 DevOps</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <span class="section-tag">03. Projects</span>
+            <h2 class="section-title">Projects <span class="gradient-text">&amp; Builds</span></h2>
+        </div>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="featured">Featured</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button class="filter-btn" data-filter="extension">Extensions</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- JOBFIT AI -->
+            <div class="project-card featured" data-category="featured ai extension">
+                <div class="project-image">
+                    <img src="assets/projects/jobfit-ai.png" alt="JobFit AI project preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">JobFit AI</h3>
+                    <p class="project-description">
+                        Turn any job posting into a personalized game plan. JobFit AI compares a resume with a role, surfaces missing skills, explains the match, and turns the gap into a recruiter-ready action plan.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span><span>LLM APIs</span><span>NLP</span><span>Chrome Extensions</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://chromewebstore.google.com/detail/dkodefdamagkhfpdgacgiajbiomncjfl?utm_source=item-share-cb" target="_blank" class="project-btn live-project"><span>Chrome Web Store</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VAIDYAAI -->
+            <div class="project-card featured" data-category="featured ai">
+                <div class="project-image">
+                    <img src="assets/projects/vaidyaai.png" alt="VaidyaAI project preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">VaidyaAI</h3>
+                    <p class="project-description">
+                        Healthcare guidance should not stop at a language barrier. VaidyaAI is a voice-first multilingual triage assistant designed around accessible symptom conversations, severity-aware guidance, and practical next steps.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span><span>FastAPI</span><span>Python</span><span>NLP</span><span>Speech APIs</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://vaidyaai-frontend.onrender.com" target="_blank" class="project-btn live-project"><span>View Project</span></a>
+                        <a href="https://github.com/diyavinod1/VaidyaAI.git" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AGROBUDDY -->
+            <div class="project-card featured" data-category="featured ai">
+                <div class="project-image">
+                    <img src="assets/projects/agrobuddy.jpeg" alt="AgroBuddy AI farming assistant preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">AgroBuddy</h3>
+                    <p class="project-description">
+                        Give farmers a more natural way to ask for help. AgroBuddy combines image, voice, and text interactions to turn crop questions into practical, multilingual guidance.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>FastAPI</span><span>OpenRouter</span><span>Supabase</span><span>OpenCV</span><span>Telegram Bot API</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/diyavinod1/AgroBuddy" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RELAUNCH AI -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <img src="assets/projects/relaunchai.png" alt="ReLaunchAI project preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ReLaunchAI</h3>
+                    <p class="project-description">
+                        A career-restart toolkit for people returning after a break — combining skill-gap analysis, resume rebuilding, interview preparation, and a practical 30-day roadmap.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>FastAPI</span><span>Streamlit</span><span>NLP</span><span>LLM APIs</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://relaunchai.streamlit.app/" target="_blank" class="project-btn live-project"><span>View Project</span></a>
+                        <a href="https://github.com/diyavinod1/RelaunchAI" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NUTRITRACK -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="assets/projects/nutritrack.png" alt="NutriTrack meal planner and nutrition tracker preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">NutriTrack</h3>
+                    <p class="project-description">
+                        Plan meals without turning nutrition into a spreadsheet. NutriTrack combines food logging, meal planning, personalized recommendations, and analytics in one full-stack product.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/diyavinod1/Online-Meal-Planner-and-Nutrition-Tracker" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERVUE -->
+            <div class="project-card featured" data-category="featured ai web">
+                <div class="project-image">
+                    <img src="assets/projects/intervue.png" alt="Intervue AI mock interview platform preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">INTERVUE</h3>
+                    <p class="project-description">
+                        An AI interviewer that does not follow a script. INTERVUE uses the candidate profile, target role, job description, previous answers, evaluation signals, and voice to decide what should come next.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span><span>TypeScript</span><span>FastAPI</span><span>LangGraph</span><span>LangChain</span><span>OpenRouter</span><span>Sarvam AI</span><span>Supabase</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://intervue-frontend-tgi7.onrender.com/" target="_blank" class="project-btn live-project"><span>View Project</span></a>
+                        <a href="https://github.com/diyavinod1/INTERVUE" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLOTTWIST AI -->
+            <div class="project-card featured" data-category="featured ai web">
+                <div class="project-image">
+                    <img src="assets/projects/plottwist-ai.png" alt="PlotTwist AI project preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">PlotTwist AI</h3>
+                    <p class="project-description">
+                        Give it chaos. Get a story. PlotTwist turns random words into characters, worlds, conflicts, plot twists, and a complete story through a structured creative pipeline.
+                    </p>
+                    <div class="project-tech">
+                        <span>Next.js</span><span>React</span><span>TypeScript</span><span>TailwindCSS</span><span>OpenRouter</span><span>Supabase</span><span>Zod</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://plottwist-ai.onrender.com/" target="_blank" class="project-btn live-project"><span>View Project</span></a>
+                        <a href="https://github.com/diyavinod1/PlotTwist-AI" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOOKIN -->
+            <div class="project-card" data-category="web ai">
+                <div class="project-image">
+                    <img src="assets/projects/lookin.png" alt="LookIn passwordless face authentication preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">LookIn</h3>
+                    <p class="project-description">
+                        What if your face was the login? LookIn explores passwordless authentication through webcam capture, facial embeddings, identity matching, and secure session handling.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>face-api.js</span><span>JWT</span>
+                    </div>
+                    <div class="project-more-hint">Click to know more <span>↗</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/diyavinod1/LookIn-Passwordless-Face-Auth" target="_blank" class="project-btn github"><svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </svg> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="projects">
+        <div class="section-header">
+            <span class="section-tag">03.5. Games</span>
+            <h2 class="section-title">Built to <span class="gradient-text">Play</span></h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- NITRO//RUN -->
+            <div class="project-card game-card nitro-game" data-category="game">
+                <div class="project-image game-visual">
+                    <img src="assets/projects/nitro-run.png" alt="NITRO RUN browser arcade game preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                    <div class="game-hud"><span class="hud-live"><i></i> LIVE BUILD</span><span class="hud-code">01 / RACE</span></div>
+                    <div class="game-visual-label"><strong>NITRO//RUN</strong><span>ENDLESS // NEON // SPEED</span></div>
+                </div>
+                <div class="project-content">
+                    <span class="game-badge">⚡ BROWSER ARCADE</span>
+                    <h3 class="project-title">NITRO//RUN</h3>
+                    <p class="project-description">
+                        GO FAST. GRAB LOOT. DON'T RUN OUT OF FUEL. GO FAST. GRAB LOOT. DON’T RUN OUT OF FUEL. NITRO//RUN turns a browser tab into a neon survival race — manage fuel, dodge traffic, collect loot, and decide when to burn the boost.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Supabase</span><span>Web Audio</span><span>Vercel</span>
+                    </div>
+                    <div class="game-meta"><span>ENDLESS HIGHWAY</span><span>LEADERBOARD</span><span>NITRO BOOST</span></div>
+                    <div class="project-links">
+                        <a href="https://nitro-run.vercel.app/" target="_blank" class="project-btn live-project"><span>Play Game</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEON DRIFT -->
+            <div class="project-card game-card neon-game" data-category="game">
+                <div class="project-image game-visual">
+                    <img src="assets/projects/neon-drift.png" alt="Neon Drift browser game preview" class="project-preview">
+                    <div class="project-overlay"></div>
+                    <div class="game-hud"><span class="hud-live"><i></i> LIVE BUILD</span><span class="hud-code">02 / DRIFT</span></div>
+                    <div class="game-visual-label"><strong>NEON DRIFT</strong><span>NEON // MOTION // ARCADE</span></div>
+                </div>
+                <div class="project-content">
+                    <span class="game-badge">✦ NEON EXPERIENCE</span>
+                    <h3 class="project-title">Neon Drift</h3>
+                    <p class="project-description">
+                        A small game built because software does not always have to be serious — neon visuals, fast movement, arcade energy, and one more run after you said you were done.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Vercel</span>
+                    </div>
+                    <div class="game-meta"><span>DRIFT</span><span>NEON</span><span>ARCADE</span></div>
+                    <div class="project-links">
+                        <a href="https://neondrift-indol.vercel.app/" target="_blank" class="project-btn live-project"><span>Play Game</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- GitHub Snapshot -->
+    <section class="github-section" id="github-snapshot">
+        <div class="section-header">
+            <span class="section-tag">04. GitHub</span>
+            <h2 class="section-title">The <span class="gradient-text">Messy Part</span></h2>
+            <p class="section-subtitle github-section-subtitle">38 public repositories — shipped projects, experiments, half-finished ideas, and the occasional “why is this working?” moment.</p>
+        </div>
+
+        <div class="github-dashboard glass-card">
+            <div class="github-profile-card">
+                <div class="github-avatar">GH</div>
+                <div class="github-profile-copy">
+                    <span class="github-live-label"><span class="status-dot"></span> LIVE PUBLIC SNAPSHOT</span>
+                    <h3>github.com/diyavinod1</h3>
+                    <p id="github-bio">Building real-world AI systems, full-stack products, experiments, and tools — one repository at a time.</p>
+                </div>
+                <a href="https://github.com/diyavinod1" target="_blank" rel="noopener noreferrer" class="project-btn live-project github-open-btn">Open GitHub ↗</a>
+            </div>
+
+            <div class="github-metrics" id="github-metrics">
+                <div><span class="metric-label">Repositories</span><strong id="github-repos">—</strong><small>Public</small></div>
+                <div><span class="metric-label">Followers</span><strong id="github-followers">—</strong><small>Community</small></div>
+                <div><span class="metric-label">Latest Push</span><strong id="github-updated">—</strong><small>Most recent activity</small></div>
+            </div>
+
+            <div class="github-repos-heading">
+                <div><span class="eyebrow-pill">RECENT WORK</span><h3>Repositories worth exploring</h3></div>
+                <a href="https://github.com/diyavinod1?tab=repositories" target="_blank" rel="noopener noreferrer">View all repositories ↗</a>
+            </div>
+            <div class="repo-list" id="repo-list"><div class="repo-loading">Fetching public repositories…</div></div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="section-header">
+            <span class="section-tag">05. Achievements</span>
+            <h2 class="section-title">Journey <span class="gradient-text">Highlights</span></h2>
+        </div>
+
+        <!-- Coding Stats -->
+        <div class="achievement-category">
+            <h3 class="category-title">
+                <span class="category-icon">💻</span>
+                Coding Platforms
+            </h3>
+            <div class="stats-grid">
+
+                <a href="https://leetcode.com/u/diya_vinod_/" target="_blank" rel="noopener noreferrer" class="stat-link">
+                    <div class="stat-card glass-card clickable">
+                        <div class="stat-icon platform-logo"><img src="assets/platforms/leetcode.png" alt="LeetCode logo"></div>
+                        <div class="stat-number" data-target="1886">0</div>
+                        <div class="stat-label">Contest Rating</div>
+                        <div class="stat-platform">LeetCode</div>
+                        <div class="stat-extra">🏅 Knight</div>
+                    </div>
+                </a>
+
+                <a href="https://www.codechef.com/users/kit28aiml018" target="_blank" rel="noopener noreferrer" class="stat-link">
+                    <div class="stat-card glass-card clickable">
+                        <div class="stat-icon platform-logo"><img src="assets/platforms/codechef.png" alt="CodeChef logo"></div>
+                        <div class="stat-number" data-target="1617">0</div>
+                        <div class="stat-label">Contest Rating</div>
+                        <div class="stat-platform">CodeChef</div>
+                        <div class="stat-extra">3 ⭐ • Div 2</div>
+                    </div>
+                </a>
+
+                <a href="https://codolio.com/profile/diya_vinod" target="_blank" rel="noopener noreferrer" class="stat-link">
+                    <div class="stat-card glass-card clickable">
+                        <div class="stat-icon platform-logo"><img src="assets/platforms/codolio.png" alt="Codolio logo"></div>
+                        <div class="stat-number" data-target="1773">0</div>
+                        <div class="stat-label">Questions Solved</div>
+                        <div class="stat-platform">Codolio</div>
+                        <div class="stat-extra">🔥 499+ Active Days</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <br>
+
+        <!-- Hackathons -->
+        <div class="achievement-category">
+            <h3 class="category-title">
+                <span class="category-icon">🏆</span>
+                Hackathons
+            </h3>
+
+            <div class="hackathon-grid">
+
+                <a href="hackathon-details.html?hackathon=sprintathon-2026" data-achievement="hackathon:sprintathon-2026" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image">
+                        <img src="assets/achievement-previews/sprintathon-2026.jpg" alt="Sprintathon 2026 - HireWise AI" class="hackathon-preview">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-year">2026</div>
+                        <h4 class="hackathon-name">Sprintathon 2026</h4>
+                        <p class="hackathon-organizer">HireWise AI · Team Leader</p>
+                        <p class="hackathon-project">Built an explainable hiring intelligence platform that connects candidates, recruiters, role-fit scoring, skill gaps, and independent fairness auditing.</p>
+                        <span class="hackathon-badge highlight">Finalist</span>
+                    </div>
+                </a>
+
+                <!-- Buildathon is ONE hackathon with ONE hero image -->
+                <a href="hackathon-details.html?hackathon=buildathon-2026" data-achievement="hackathon:buildathon-2026" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image">
+                        <img src="assets/achievement-previews/buildathon.jpg" alt="Buildathon 2026" class="hackathon-preview">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-year">2026</div>
+                        <h4 class="hackathon-name">Buildathon 2026</h4>
+                        <p class="hackathon-organizer">Team Leader · Diya Vinod + Rakshitha V.</p>
+                        <p class="hackathon-project">One buildathon. Two rounds. Round 1: EduPortal, a unified education management platform. Round 2: TalentSync AI, an internal talent-to-opportunity matching system.</p>
+                        <span class="hackathon-badge highlight">2 Rounds · Team Leader</span>
+                    </div>
+                </a>
+
+                <a href="hackathon-details.html?hackathon=tnwise-2026" data-achievement="hackathon:tnwise-2026" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image">
+                        <img src="assets/achievement-previews/tnwise-2026.jpg" alt="TNWISE 2026" class="hackathon-preview">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-year">2026</div>
+                        <h4 class="hackathon-name">TNWISE 2026</h4>
+                        <p class="hackathon-organizer">Team Leader · Diya</p>
+                        <p class="hackathon-project">Led a team with Vinitha and Alshifha to turn a problem statement into a working prototype under a hackathon deadline.</p>
+                        <span class="hackathon-badge highlight">Team Leader</span>
+                    </div>
+                </a>
+
+                <a href="hackathon-details.html?hackathon=devspark-25" data-achievement="hackathon:devspark-25" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image">
+                        <img src="assets/achievement-previews/devspark-25.jpg" alt="DevSpark'25 hackathon" class="hackathon-preview">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-year">2025</div>
+                        <h4 class="hackathon-name">DevSpark'25</h4>
+                        <p class="hackathon-organizer">KPR Institute of Engineering and Technology · Team Leader</p>
+                        <p class="hackathon-project">Smart Hospital Queue Management System</p>
+                        <span class="hackathon-badge">Team Leader</span>
+                    </div>
+                </a>
+
+                <a href="hackathon-details.html?hackathon=east-india-blockchain" data-achievement="hackathon:east-india-blockchain" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image">
+                        <img src="assets/achievement-previews/east-india-blockchain.jpg" alt="East India BLOCKCHAIN Summit 2.0" class="hackathon-preview">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-year">2025</div>
+                        <h4 class="hackathon-name">East India BLOCKCHAIN Summit 2.0</h4>
+                        <p class="hackathon-organizer">IIT Kharagpur · Team Leader</p>
+                        <p class="hackathon-project">Emergency &amp; Disaster Relief Stablecoin System</p>
+                        <span class="hackathon-badge highlight">Finalist</span>
+                    </div>
+                </a>
+
+                <a href="hackathon-details.html?hackathon=tnimpact" data-achievement="hackathon:tnimpact" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image">
+                        <img src="assets/achievement-previews/tnimpact.jpg" alt="TNIMPACT hackathon" class="hackathon-preview">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="hackathon-content">
+                        <div class="hackathon-year">2026</div>
+                        <h4 class="hackathon-name">TNIMPACT</h4>
+                        <p class="hackathon-organizer">TANCAM</p>
+                        <p class="hackathon-project">Multilingual Voice-first Health Assistant</p>
+                        <span class="hackathon-badge highlight">Solo Builder</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <br>
+
+        <!-- Internships -->
+        <div class="achievement-category">
+            <h3 class="category-title">
+                <span class="category-icon">💼</span>
+                Internships
+            </h3>
+
+            <div class="hackathon-grid">
+                <a href="internship-details.html?internship=decodelabs" data-achievement="internship:decodelabs" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image"><img src="assets/internships/decodelabs.jpeg" alt="DecodeLabs logo" class="hackathon-preview"><div class="hackathon-overlay"></div></div>
+                    <div class="hackathon-content"><div class="hackathon-year">2026</div><h4 class="hackathon-name">Generative AI Intern</h4><p class="hackathon-organizer">DecodeLabs · May 20 – Jun 20, 2026</p><p class="hackathon-project">Worked on GenAI workflows across prompt engineering, image generation, RAG-based document analysis, multimodal experimentation, and AI safety testing.</p><span class="hackathon-badge highlight">Generative AI</span></div>
+                </a>
+                <a href="internship-details.html?internship=qskill" data-achievement="internship:qskill" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image"><img src="assets/internships/qskill.png" alt="QSkill logo" class="hackathon-preview"><div class="hackathon-overlay"></div></div>
+                    <div class="hackathon-content"><div class="hackathon-year">2026</div><h4 class="hackathon-name">AI/ML Intern</h4><p class="hackathon-organizer">QSkill · Jun 1 – Jul 1, 2026</p><p class="hackathon-project">Worked across data analysis, predictive modelling, and applied ML workflows — turning concepts into practical AI experiments.</p><span class="hackathon-badge highlight">AI / ML</span></div>
+                </a>
+                <a href="internship-details.html?internship=servicenow" data-achievement="internship:servicenow" class="hackathon-card glass-card achievement-link">
+                    <div class="hackathon-image"><img src="assets/internships/servicenow.png" alt="ServiceNow logo" class="hackathon-preview"><div class="hackathon-overlay"></div></div>
+                    <div class="hackathon-content"><div class="hackathon-year">2026</div><h4 class="hackathon-name">Virtual Internship Program</h4><p class="hackathon-organizer">ServiceNow · Jul 2026</p><p class="hackathon-project">Explored agentic AI concepts alongside ServiceNow administration, workflow automation, testing, reporting, and CSA preparation.</p><span class="hackathon-badge">ServiceNow</span></div>
+                </a>
+            </div>
+        </div>
+        <br>
+
+        <!-- Certifications -->
+        <div class="achievement-category">
+            <h3 class="category-title"><span class="category-icon">📜</span> Certifications</h3>
+            <p class="section-lede">A growing stack of AI, software, cloud, programming, and data foundations.</p>
+            <div class="cert-grid">
+                <a href="certificates/GetStartedWithPython.png" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🐍</div><h4>Get Started with Python</h4><span>Google · Coursera</span></a>
+                <a href="certificates/PythonEssentials1%262.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🐍</div><h4>Python Essentials 1 &amp; 2</h4><span>Cisco Networking Academy</span></a>
+                <a href="certificates/NVIDIA.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🧠</div><h4>Fundamentals of Deep Learning</h4><span>NVIDIA</span></a>
+                <a href="certificates/DeepLearningAndReinforcementLearning.jpg" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🔗</div><h4>Deep Learning &amp; Reinforcement Learning</h4><span>IBM · Coursera</span></a>
+                <a href="certificates/Problem Solving Through Programming In C.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">💻</div><h4>Problem Solving Through Programming in C</h4><span>NPTEL</span></a>
+                <a href="certificates/5-Day AI Agents Intensive Course with Google.png" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🤖</div><h4>5-Day AI Agents Intensive Course with Google</h4><span>Kaggle · Google</span></a>
+                <a href="certificates/AWS_certificate.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">☁️</div><h4>AWS Cloud Quest: Cloud Practitioner</h4><span>AWS</span></a>
+                <a href="certificates/AlgorithmicGraphTheoryAndDataStructures.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🧩</div><h4>Algorithmic Graph Theory and Data Structures</h4><span>NPTEL</span></a>
+                <a href="certificates/DataBaseManagementSystem.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">🗄️</div><h4>Database Management System</h4><span>NPTEL</span></a>
+                <a href="certificates/AWSAcademyGraduate-CloudFoundations-TrainingBadge.pdf" class="cert-card glass-card certificate-trigger"><div class="cert-icon">☁️</div><h4>AWS Academy Graduate - Cloud Foundations - TrainingBadge</h4><span>AWS</span></a>
+            </div>
+        </div>
+        <br>
+
+        <!-- Academic Achievements -->
+        <div class="achievement-category">
+            <h3 class="category-title"><span class="category-icon">🎓</span> Academic Achievements</h3>
+            <div class="academic-achievement-grid">
+                <article class="academic-achievement-card glass-card">
+                    <div class="academic-achievement-image">
+                        <img src="assets/achievements/department-rank-2.jpeg" alt="Department Rank 2, CSE AI and ML">
+                        <div class="hackathon-overlay"></div>
+                    </div>
+                    <div class="academic-achievement-content">
+                        <span class="academic-label">ACADEMIC HIGHLIGHT · FIRST YEAR</span>
+                        <h4>Department Rank 2, CSE (AI &amp; ML)</h4>
+                        <p>Secured top academic performance in First Year with a <strong>9.17 CGPA</strong>.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <span class="section-tag">06. Contact</span>
+            <h2 class="section-title">Have an Idea Worth <span class="gradient-text">Building?</span></h2>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card glass-card">
+                    <h3>Let’s build something worth shipping.</h3>
+                    <p>I’m interested in ambitious products, interesting engineering problems, AI experiments, and opportunities where I can build, learn, and ship.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:dhiyavinodarrived@gmail.com">dhiyavinodarrived@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Coimbatore, Tamil Nadu, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-quick-actions">
+                        <button type="button" class="project-btn live-project recruiter-trigger">Recruiter Quick View</button>
+                        <a href="#github-snapshot" class="project-btn github">See GitHub Snapshot</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/diyavinod1/" target="_blank" class="social-link magnetic-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/diyavinod1" target="_blank" class="social-link magnetic-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <form class="contact-form glass-card" action="https://formspree.io/f/meoydkal" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn magnetic-btn">
+                        <span>Send Message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile bottom navigation -->
+    <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+        <a href="#home" class="mobile-nav-item active"><span>⌂</span><small>Home</small></a>
+        <a href="#projects" class="mobile-nav-item"><span>▦</span><small>Projects</small></a>
+        <a href="#games" class="mobile-nav-item"><span>✦</span><small>Games</small></a>
+        <a href="#achievements" class="mobile-nav-item"><span>◈</span><small>Wins</small></a>
+        <a href="#contact" class="mobile-nav-item"><span>↗</span><small>Contact</small></a>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">&lt;Diya/&gt;</span>
+            </div>
+            <p class="footer-text">
+                Ideas in. Systems out. <span class="gradient-text">Always building.</span>
+            </p>
+            <p class="footer-copyright">
+                © 2026 Diya. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette" aria-hidden="true">
+        <div class="command-backdrop"></div>
+        <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="commandTitle">
+            <div class="command-top">
+                <div><span class="eyebrow-pill">COMMAND CENTER</span><h2 id="commandTitle">Jump anywhere.</h2></div>
+                <kbd>ESC</kbd>
+            </div>
+            <div class="command-search-wrap"><span>⌕</span><input id="commandSearch" type="search" placeholder="Search sections, actions, links..." autocomplete="off"></div>
+            <div class="command-list" id="commandList"></div>
+            <div class="command-hint"><span>↵ Enter</span> open <span>↑↓</span> navigate <span>⌘K</span> / <span>Ctrl K</span> command palette</div>
+        </div>
+    </div>
+
+    <!-- Resume Preview -->
+    <div class="ui-modal" id="resumeModal" aria-hidden="true">
+        <div class="ui-modal-backdrop"></div>
+        <div class="ui-modal-panel glass-card resume-panel" role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+            <button class="ui-modal-close" type="button" data-close-modal="resumeModal">×</button>
+            <div class="certificate-heading"><span class="eyebrow-pill">RESUME PREVIEW</span><h2 id="resumeTitle">Diya Vinod · Resume</h2><p>Quick recruiter view — preview first, download when ready.</p></div>
+            <iframe class="resume-frame" src="assets/DIYA VINOD.pdf" title="Diya Vinod resume preview"></iframe>
+            <div class="project-links resume-actions"><a href="assets/DIYA VINOD.pdf" target="_blank" rel="noopener noreferrer" class="project-btn github">Open PDF ↗</a><a href="assets/DIYA VINOD.pdf" download class="project-btn live-project">Download Resume ↓</a></div>
+        </div>
+    </div>
+
+    <!-- Developer Easter Egg -->
+    <div class="dev-console" id="devConsole" aria-hidden="true">
+        <div class="dev-console-window">
+            <div class="dev-console-bar"><span><i></i><i></i><i></i></span><b>diya@portfolio:~</b><button type="button" id="devConsoleClose">×</button></div>
+            <div class="dev-console-body" id="devConsoleBody"></div>
+        </div>
+    </div>
+
+    <!-- Hackathon / Internship Details Modal -->
+    <div class="ui-modal" id="achievementModal" aria-hidden="true">
+        <div class="ui-modal-backdrop"></div>
+        <div class="ui-modal-panel glass-card achievement-modal-panel" role="dialog" aria-modal="true" aria-labelledby="achievementModalTitle">
+            <button class="ui-modal-close" type="button" data-close-modal="achievementModal">×</button>
+            <div class="achievement-modal-media"><img id="achievementModalImage" src="" alt=""></div>
+            <span class="eyebrow-pill" id="achievementModalType">ACHIEVEMENT</span>
+            <h2 id="achievementModalTitle">Achievement</h2>
+            <p id="achievementModalMeta" class="modal-tagline"></p>
+            <p id="achievementModalDescription" class="detail-description"></p>
+            <div class="modal-columns achievement-modal-columns">
+                <div><h4 id="achievementModalRoleLabel">Role</h4><p id="achievementModalRole"></p></div>
+                <div><h4>Team / Individual</h4><p id="achievementModalTeam"></p></div>
+            </div>
+            <div><h4>Highlights</h4><ul id="achievementModalHighlights" class="clean-list"></ul></div>
+            <div class="project-links achievement-modal-actions">
+                <a id="achievementModalLive" class="project-btn live-project" target="_blank" rel="noopener noreferrer" style="display:none">View Round 1 · EduPortal ↗</a>
+            <a id="achievementModalSecondLive" class="project-btn live-project" target="_blank" rel="noopener noreferrer" style="display:none">View Round 2 · TalentSync AI ↗</a>
+                <a id="achievementModalPdf" class="project-btn github" target="_blank" rel="noopener noreferrer" style="display:none">Open Document ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div class="ui-modal" id="projectModal" aria-hidden="true">
+        <div class="ui-modal-backdrop"></div>
+        <div class="ui-modal-panel glass-card" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+            <button class="ui-modal-close" type="button" data-close-modal="projectModal">×</button>
+            <span class="eyebrow-pill">PROJECT DEEP DIVE</span>
+            <h2 id="projectModalTitle">Project</h2>
+            <p id="projectModalTagline" class="modal-tagline"></p>
+            <div class="modal-columns"><div><h4>What it solves</h4><p id="projectModalProblem"></p></div><div><h4>Built with</h4><div id="projectModalTech" class="mini-tags"></div></div></div>
+            <div class="modal-architecture" id="projectModalArchitecture"></div>
+            <div class="project-links"><a id="projectModalLive" class="project-btn live-project" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a id="projectModalGithub" class="project-btn github" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+        </div>
+    </div>
+
+    <!-- Recruiter View Modal -->
+    <div class="ui-modal" id="recruiterModal" aria-hidden="true">
+        <div class="ui-modal-backdrop"></div>
+        <div class="ui-modal-panel glass-card recruiter-panel" role="dialog" aria-modal="true">
+            <button class="ui-modal-close" type="button" data-close-modal="recruiterModal">×</button>
+            <span class="eyebrow-pill">RECRUITER QUICK VIEW</span>
+            <h2>Diya Vinod</h2>
+            <p class="modal-tagline">AI / ML Engineer-in-Progress · Full-Stack Builder · Problem Solver</p>
+            <div class="recruiter-grid">
+                <div><h4>Core Stack</h4><div class="mini-tags"><span>Python</span><span>JavaScript</span><span>React</span><span>FastAPI</span><span>Node.js</span><span>Supabase</span><span>LLM APIs</span><span>LangChain</span></div></div>
+                <div><h4>Highlights</h4><ul class="clean-list"><li>1760+ problems solved</li><li>9+ shipped projects</li><li>3 internship experiences</li><li>Hackathon team leadership</li></ul></div>
+                <div><h4>Featured Work</h4><p>INTERVUE · VaidyaAI · JobFit AI · PlotTwist AI · NITRO//RUN</p></div>
+                <div><h4>Education</h4><p>BE CSE (AI & ML) · KIT · 2028</p></div>
+            </div>
+            <div class="project-links"><a href="assets/DIYA VINOD.pdf" download class="project-btn live-project">Download Resume ↓</a><a href="https://www.linkedin.com/in/diyavinod1/" target="_blank" rel="noopener noreferrer" class="project-btn github">LinkedIn ↗</a><a href="https://github.com/diyavinod1" target="_blank" rel="noopener noreferrer" class="project-btn github">GitHub ↗</a></div>
+        </div>
+    </div>
+
+    <!-- Certificate Viewer -->
+    <div class="ui-modal" id="certificateModal" aria-hidden="true">
+        <div class="ui-modal-backdrop"></div>
+        <div class="ui-modal-panel glass-card certificate-panel" role="dialog" aria-modal="true">
+            <button class="ui-modal-close" type="button" data-close-modal="certificateModal">×</button>
+            <div class="certificate-heading"><span class="eyebrow-pill">CERTIFICATE VIEWER</span><h2 id="certificateTitle">Certificate</h2><p id="certificateIssuer"></p></div>
+            <div class="certificate-frame" id="certificateFrame"></div>
+            <div class="project-links"><a id="certificateOpen" class="project-btn live-project" target="_blank" rel="noopener noreferrer">Open Fullscreen ↗</a></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-modal" id="popupModal">
+        <div class="popup-content glass-card">
+            <span class="popup-close">&times;</span>
+            <div class="popup-icon">🚧</div>
+            <h3>Project Not Deployed Yet</h3>
+            <p>But it's busy becoming legendary behind the scenes... 🚀</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
